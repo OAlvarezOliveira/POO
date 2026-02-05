@@ -58,6 +58,19 @@ class Libro {
 			System.out.printf("Titulo:\t%s\nAutor:\t%s\nNúmero de páginas:\t%d\n",this.titulo,this.autor,this.numeroPaginas  );
 			
 		}
+			
+			class LibroDigital extends Libro{
+				
+				public LibroDigital(String l, String a, int numP, double tamanoArchivo, String formato) {
+					super(l, a, numP);
+					this.tamanoArchivo = tamanoArchivo;
+					this.formato = formato;
+				}
+				
+				private double tamanoArchivo; //MB
+				private String formato;
+				
+			}
 
 }
 
