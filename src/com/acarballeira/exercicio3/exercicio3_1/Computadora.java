@@ -14,6 +14,7 @@ package com.acarballeira.exercicio3.exercicio3_1;;
 public class Computadora {
 	
 	private String marca;
+	private Boolean encencido;
 	private String modelo;
 	private String procesador;
 	private int memoria; //MB
@@ -27,6 +28,7 @@ public class Computadora {
 		this.procesador = procesador;
 		this.memoria = memoria;
 		this.disco = disco;
+		this.encencido = false;
 	}
 	
 	public String getMarca() {
@@ -62,20 +64,25 @@ public class Computadora {
 	
 	public void encender(){
 		
-		System.out.printf("El ordenador %s %s se está encenciedo",this.marca,this.modelo);
+		if(!this.encencido) {		System.out.printf("El ordenador %s %s se está encenciedo \n",this.marca,this.modelo);
+}
 		
 	}
 	
 	public void apagar(){
 		
-		System.out.printf("El ordenador %s %s se está apagando",this.marca,this.modelo);
-		
+		if(this.encencido) {
+		System.out.printf("El ordenador %s %s se está apagando \n",this.marca,this.modelo);
+		}
 	}
 	
 	public void ejecutar(String programa){
 		
-		System.out.printf("Se está ejecutando el progrma %s en el ordenador %s %s",programa,this.marca,this.modelo);
-		
+		if(this.encencido) {
+		System.out.printf("Se está ejecutando el progrma %s en el ordenador %s %s \n",programa,this.marca,this.modelo);
+		}
+		else {	System.out.printf("El ordenador %s %s no puede ejecutar el programa %s por que  está apagado \n",programa,this.marca,this.modelo);
+}
 	}
 
 
