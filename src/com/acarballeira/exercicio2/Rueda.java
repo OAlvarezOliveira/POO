@@ -47,4 +47,11 @@ public class Rueda {
 
 	}
 
+
+
+	public Object getTamanho() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

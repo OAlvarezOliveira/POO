@@ -50,6 +50,10 @@ public class Coche implements Comparable{
 
 //	}
 
+	public Coche(String string, Motor motor2, Rueda[] vRueda) {
+		// TODO Auto-generated constructor stub
+	}
+
 	public String getMarca() {
 
 		return this.marca;
@@ -80,9 +84,7 @@ public class Coche implements Comparable{
 
 	}
 
-	@Override
-
-	public String toString() {
+	public String toString1() {
 
 		return "Coche [" + (getMarca() != null ? "Marca =" + getMarca() + ", " : "") + "Caballos ="
 
@@ -115,17 +117,52 @@ public class Coche implements Comparable{
 	}
 
 	@Override
-
 	public int compareTo(Object o) {
-
-		Coche coche = (Coche) o;
-
 		
-
-		return 0;
-
+		Coche otro = (Coche) o;
+		
+		//Comparamos CV
+		if(this.motor.getCaballos() < otro.motor.getCaballos()) {
+			return 1;			
+		} else if(this.motor.getCaballos() > otro.motor.getCaballos()) {
+			return -1;
+		}
+		
+		//Comparamos número de ruedas
+		if(this.ruedas.length < otro.ruedas.length) {
+			return 1;
+		} if(this.ruedas.length > otro.ruedas.length) {
+			return -1;
+		}
+		
+		//Comparamos tamaño de rueda
+		if(this.ruedas[0].getDiametroRueda() < otro.ruedas[0].getDiametroRueda()) {
+			return 1;
+		} else if(this.ruedas[0].getDiametroRueda() < otro.ruedas[0].getDiametroRueda()) {
+			return -1;
+		}
+		//Comparamos marca
+		return this.marca.compareTo(otro.marca);
+		
 	}
+	
+	
+	
+	
 
+	public String toString() {
+	    return String.format("\n-----------------\n"
+	            + "Marca: %s \n"
+	            + "Motor. CV: %d. %s\n" 
+	            + "Ruedas. Numero: %d. Díametro: %d. Tipo: %s",
+	            this.getMarca(), 
+	            this.motor.getCaballos(), 
+	            this.motor.getTipoGasolina(), 
+	            this.ruedas.length, 
+	            this.ruedas[0].getDiametroRueda(), 
+	            this.ruedas[0].getTipoRueda());
+	}
+	
 	
 
 }
