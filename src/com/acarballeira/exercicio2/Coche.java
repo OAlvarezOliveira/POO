@@ -20,7 +20,7 @@ public class Coche implements Comparable<Coche> {  // ✅ CORREGIDO: Añadido <C
     
     private Motor motor;
     private Rueda[] ruedas;
-    private String marca;  // ✅ CORREGIDO: Ahora es private
+    private String marca;  
     
     
     // ============ CONSTRUCTORES ============
