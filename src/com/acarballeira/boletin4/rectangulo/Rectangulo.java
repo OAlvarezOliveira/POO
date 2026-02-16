@@ -1,4 +1,4 @@
-package com.acarballeira.boletin1.rectangulo;
+package com.acarballeira.boletin4.rectangulo;
 
 public class Rectangulo {
 

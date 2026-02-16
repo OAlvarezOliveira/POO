@@ -1,4 +1,7 @@
-package com.acarballeira.boletin1.arbore;
+package com.acarballeira.boletin4.arbore;
+import java.time.LocalDate;
+
+import com.acarballeira.boletin4.finca.Coordenada;
 
 public class Arbore {
 
@@ -12,6 +15,8 @@ public class Arbore {
 	public String nomeComun; // Nombre común (ej: "Roble")
 	public String nomeLatino; // Nombre científico
 	public TipoFolla tipoFolla; // Tipo de hoja: CADUCO o PERENNE
+	private Coordenada localizacion;      // Dónde está el árbol
+	private LocalDate fechaTrasplante;    // Cuándo se trasplantó (puede ser null)
 
 	// Constructor por defecto (sin parámetros)
 	public Arbore() {
@@ -32,6 +37,27 @@ public class Arbore {
 	    this.nomeLatino = nomeLatino;
 	    this.tipoFolla = tipoFolla;
 	}
+	
+	//Getter y Setters
+	
+	
+	
+	public Coordenada getLocalizacion() {
+		return localizacion;
+	}
+
+	public void setLocalizacion(Coordenada localizacion) {
+		this.localizacion = localizacion;
+	}
+
+	public LocalDate getFechaTrasplante() {
+		return fechaTrasplante;
+	}
+
+	public void setFechaTrasplante(LocalDate fechaTrasplante) {
+		this.fechaTrasplante = fechaTrasplante;
+	}
+	
 
 	// Método para mostrar información del árbol
 	@Override
@@ -44,4 +70,23 @@ public class Arbore {
 	public static int getNumArbores() {
 		return numArbores;
 	}
+	
+	// Versión 1: Solo nueva ubicación
+	public void trasplantar(Coordenada nuevaLocalizacion) {
+		this.localizacion = nuevaLocalizacion; // Cambiar solo la ubicación
+
+	}
+
+	public void trasplantar(Coordenada nuevaLocalizacion, LocalDate fecha) {
+	    trasplantar(nuevaLocalizacion);  // Llama al método 1 (cambia ubicación)
+	    this.fechaTrasplante = fecha;    // Además guarda la fecha
+	}
+	
+	
+	
+	
+	
+	
+	
+	
 }

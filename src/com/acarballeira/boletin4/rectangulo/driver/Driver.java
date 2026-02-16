@@ -1,6 +1,6 @@
-package com.acarballeira.boletin1.rectangulo.driver;
+package com.acarballeira.boletin4.rectangulo.driver;
 
-import com.acarballeira.boletin1.rectangulo.Rectangulo;
+import com.acarballeira.boletin4.rectangulo.Rectangulo;
 
 
 

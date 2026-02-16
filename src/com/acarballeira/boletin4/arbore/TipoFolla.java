@@ -1,4 +1,4 @@
-package com.acarballeira.boletin1.arbore;
+package com.acarballeira.boletin4.arbore;
 
 public enum TipoFolla {
 	
