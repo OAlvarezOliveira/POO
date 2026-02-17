@@ -1,4 +1,4 @@
-package com.acarballeira.boletin2.coche;
+package com.acarballeira.boletin2;
 
 public class Rueda {
 

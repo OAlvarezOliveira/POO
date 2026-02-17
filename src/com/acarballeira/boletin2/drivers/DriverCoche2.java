@@ -1,12 +1,12 @@
-package com.acarballeira.boletin2.coche.drivers;
-
-import com.acarballeira.boletin2.coche.Coche;
-import com.acarballeira.boletin2.coche.Motor;
-import com.acarballeira.boletin2.coche.Rueda;
-import com.acarballeira.boletin2.coche.TipoMotor;
-import com.acarballeira.boletin2.coche.TipoRueda;
+package com.acarballeira.boletin2.drivers;
 
 import java.util.Arrays;
+
+import com.acarballeira.boletin2.Coche;
+import com.acarballeira.boletin2.Motor;
+import com.acarballeira.boletin2.Rueda;
+import com.acarballeira.boletin2.TipoMotor;
+import com.acarballeira.boletin2.TipoRueda;
 
 
 public class DriverCoche2 {
