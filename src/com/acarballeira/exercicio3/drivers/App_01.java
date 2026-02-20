@@ -22,8 +22,8 @@ public class App_01 {
 		System.out.println(pc01);
 		
 		pc01.encender();
-		pc01.apagar();
 		pc01.ejecutar("InkScape");
+		pc01.apagar();
 	}
 
 }

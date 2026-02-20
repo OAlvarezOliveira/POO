@@ -66,7 +66,7 @@ public class Computadora {
 		
 		if(!this.encencido) {		System.out.printf("El ordenador %s %s se está encenciedo \n",this.marca,this.modelo);
 }
-		
+		this.encencido = true;
 	}
 	
 	public void apagar(){
@@ -74,6 +74,8 @@ public class Computadora {
 		if(this.encencido) {
 		System.out.printf("El ordenador %s %s se está apagando \n",this.marca,this.modelo);
 		}
+		
+		this.encencido = false;
 	}
 	
 	public void ejecutar(String programa){
