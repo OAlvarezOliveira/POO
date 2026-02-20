@@ -24,6 +24,12 @@ public class Sobremesa extends Computadora {
 		this.puertosUSB = puertosUSB;
 		this.puertosHDMI = puertosHDMI;
 	}
+	
+	public Sobremesa() {
+		super();
+
+	}
+
 
 	public Teclado getTeclado() {
 		return teclado;
@@ -85,8 +91,8 @@ public class Sobremesa extends Computadora {
 	public String toString() {
 	    return super.toString() +
 	           String.format("\nTeclado: %s %s\nRatón: %s %s\nPrecio: %.2f€\nWiFi: %b",
-	                         teclado.getMarca(), teclado.getModelo(),
-	                         raton.getMarca(), raton.getModelo(),
+	                         teclado.getNumTeclas(),
+	                         raton.getModelo(),
 	                         precio, wifi);
 	}
 	

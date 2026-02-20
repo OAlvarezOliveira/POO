@@ -27,6 +27,12 @@ public class Portatil extends Computadora {
 		this.capacidadBateria = capacidadBateria;
 		this.autonomiaHoras = autonomiaHoras;
 	}
+	
+	public Portatil() {
+		super();
+
+	}
+
 
 	public String getResolucion() {
 		return resolucion;

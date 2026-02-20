@@ -28,8 +28,8 @@ public class App_02 {
 		Disco disc = new Disco (1024,"SSD");
 
         // Crear Teclado y Ratón
-        Teclado teclado = new Teclado("Logitech", "K120", "USB", "ES", false, false, 104, 0.5, false);
-        Raton raton = new Raton("Logitech", "M185", "Inalámbrico", 1000, 3, true, 0.08, false, true);
+        Teclado teclado = new Teclado(140);
+        Raton raton = new Raton( "M185");
         
         // Crear Sobremesa
         Sobremesa sobremesa = new Sobremesa("HP", "Pavilion", pr, disc,mem,  

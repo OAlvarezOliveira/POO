@@ -29,6 +29,10 @@ public class Computadora {
 		this.hd = hd;
 		this.memoria = memoria;
 	}
+	
+	public Computadora() {
+
+	}
 
 	public String getMarca() {
 		return marca;
